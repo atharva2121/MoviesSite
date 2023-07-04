@@ -14,7 +14,7 @@ export class MoviesDataService {
       "genre": "Action",
       "duration": "2h 30m",
       "rating": 8.2,
-      "poster": ""
+      "poster": "https://c8.alamy.com/comp/F762XE/film-movie-poster-of-titanic-F762XE.jpg"
     },
     {
       "name": "Movie 2",
@@ -25,7 +25,7 @@ export class MoviesDataService {
       "genre": "Drama",
       "duration": "1h 45m",
       "rating": 7.9,
-      "poster": ""
+      "poster": "https://media1.popsugar-assets.com/files/thumbor/z5oKgNC9S4DS6Bay78Aoy5aLO4s/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/26/813/n/1922283/055dc333c3280d59_BeautyAndTheBeast58726d5b9fac8/i/Beauty-Beast-2017-Movie-Posters.jpg"
     },
     {
       "name": "Movie 3",
@@ -36,7 +36,7 @@ export class MoviesDataService {
       "genre": "Comedy",
       "duration": "2h 10m",
       "rating": 6.5,
-      "poster": ""
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcui9sumhbzhduSzDcJcHf-vFmHKc_HVxWHyR-L55&s"
     },
     {
       "name": "Movie 4",
@@ -47,7 +47,7 @@ export class MoviesDataService {
       "genre": "Sci-Fi",
       "duration": "2h 15m",
       "rating": 8.7,
-      "poster": ""
+      "poster": "https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg"
     },
     {
       "name": "Movie 5",
@@ -124,7 +124,7 @@ export class MoviesDataService {
       "genre": "Action",
       "duration": "2h 30m",
       "rating": 7.7,
-      "poster": ""
+      "poster": "https://imgcdn.ragalahari.com/jan2022/designs/nbk107-posters/nbk107-posters1t.jpg"
     },
     {
       "name": "Movie 12",
@@ -135,7 +135,7 @@ export class MoviesDataService {
       "genre": "Romance",
       "duration": "1h 50m",
       "rating": 6.8,
-      "poster": ""
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUWB151Hk7Na-r2EiiO0FqITnsAQ-EVLKRl6gchRyS&s"
     },
     {
       "name": "Movie 13",
@@ -146,7 +146,7 @@ export class MoviesDataService {
       "genre": "Sci-Fi",
       "duration": "2h 15m",
       "rating": 8.5,
-      "poster": ""
+      "poster": "https://media.harrypotterfanzone.com/philosophers-stone-20-years-of-movie-magic-ron-poster.jpg"
     },
     {
       "name": "Movie 14",
@@ -157,7 +157,7 @@ export class MoviesDataService {
       "genre": "Comedy",
       "duration": "1h 55m",
       "rating": 7.1,
-      "poster": ""
+      "poster": "https://sm.ign.com/t/ign_za/gallery/s/spider-man/spider-man-far-from-home-official-movie-posters_ex7e.1080.jpg"
     },
     {
       "name": "Movie 15",
@@ -168,7 +168,7 @@ export class MoviesDataService {
       "genre": "Drama",
       "duration": "2h 10m",
       "rating": 7.3,
-      "poster": ""
+      "poster": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg?ts=1636996180"
     },
     {
       "name": "Movie 16",
@@ -179,7 +179,7 @@ export class MoviesDataService {
       "genre": "Thriller",
       "duration": "2h 5m",
       "rating": 8.0,
-      "poster": ""
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Cd7V4svdNOtazdX7sOjlbIk481S4-RXCxXWRdPN&s"
     },
     {
       "name": "Movie 17",
@@ -190,7 +190,7 @@ export class MoviesDataService {
       "genre": "Action",
       "duration": "2h 30m",
       "rating": 7.5,
-      "poster": ""
+      "poster": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054"
     },
     {
       "name": "Movie 18",
@@ -201,7 +201,7 @@ export class MoviesDataService {
       "genre": "Romance",
       "duration": "1h 50m",
       "rating": 6.7,
-      "poster": ""
+      "poster": "https://media.comicbook.com/2017/10/iron-man-movie-poster-marvel-cinematic-universe-1038878.jpg"
     },
     {
       "name": "Movie 19",
@@ -212,7 +212,7 @@ export class MoviesDataService {
       "genre": "Sci-Fi",
       "duration": "2h 15m",
       "rating": 8.4,
-      "poster": ""
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgB-is3VWqvaQFBvvsMN-xaY8Js_UHhq-M2Bx8WII&s"
     },
     {
       "name": "Movie 20",
@@ -223,7 +223,7 @@ export class MoviesDataService {
       "genre": "Comedy",
       "duration": "1h 55m",
       "rating": 7.0,
-      "poster": ""
+      "poster": "https://marketplace.canva.com/EAE_E8rjFrI/1/0/1131w/canva-minimal-mystery-of-forest-movie-poster-ggHwd_WiPcI.jpg"
     },
     {
       "name": "Movie 21",
@@ -234,7 +234,7 @@ export class MoviesDataService {
       "genre": "Drama",
       "duration": "2h 10m",
       "rating": 7.2,
-      "poster": ""
+      "poster": "https://images.indianexpress.com/2021/01/master.jpg?w=350"
     },
     {
       "name": "Movie 22",
@@ -245,7 +245,7 @@ export class MoviesDataService {
       "genre": "Thriller",
       "duration": "2h 5m",
       "rating": 8.3,
-      "poster": ""
+      "poster": "https://s.yimg.com/ny/api/res/1.2/ZzAHlDHi8a2xdBRRbruaYQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTkyOA--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/d05a3f087fa57f6d41b865d53a42a5f5"
     },
     {
       "name": "Movie 23",
@@ -256,7 +256,7 @@ export class MoviesDataService {
       "genre": "Action",
       "duration": "2h 30m",
       "rating": 7.4,
-      "poster": ""
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWHm-dAEkgvyu_RVKu7fh9HnabnzqDc73khagBWrU&s"
     },
     {
       "name": "Movie 24",
@@ -267,7 +267,7 @@ export class MoviesDataService {
       "genre": "Romance",
       "duration": "1h 50m",
       "rating": 6.6,
-      "poster": ""
+      "poster": "https://img.freepik.com/premium-psd/double-exposure-photo-effect-template_492987-352.jpg"
     }
   ]
   constructor() { }
