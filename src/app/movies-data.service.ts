@@ -270,9 +270,44 @@ export class MoviesDataService {
       "poster": "https://img.freepik.com/premium-psd/double-exposure-photo-effect-template_492987-352.jpg"
     }
   ]
+  recentMoviesData: any = [];
+  popularMoviesData: any = [];
+  trendingMoviesData: any = [];
+  
+
   constructor() { }
 
   getMoviesData(){
     return this.movies.slice();
+  }
+
+  getRecentMoviesData(){
+    for (let i = 0; i < this.movies.length; i++) {
+      const movie = this.movies[i];
+      if(movie.type === "Recent"){
+        this.recentMoviesData.push(movie);
+      }
+    }
+    return this.recentMoviesData.slice();
+  }
+
+  getPopularMoviesData(){
+    for (let i = 0; i < this.movies.length; i++) {
+      const movie = this.movies[i];
+      if(movie.type === "Popular"){
+        this.popularMoviesData.push(movie);
+      }
+    }
+    return this.popularMoviesData.slice();
+  }
+
+  getTrendingMoviesData(){
+    for (let i = 0; i < this.movies.length; i++) {
+      const movie = this.movies[i];
+      if(movie.type === "Trending"){
+        this.trendingMoviesData.push(movie);
+      }
+    }
+    return this.trendingMoviesData.slice();
   }
 }
