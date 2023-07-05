@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { TrendingComponent } from './trending/trending.component';
+import { RecentComponent } from './recent/recent.component';
+import { PopularComponent } from './popular/popular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    TrendingComponent,
+    RecentComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,

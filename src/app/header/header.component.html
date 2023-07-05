@@ -9,12 +9,12 @@
             <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#" (click)="onSelect('recent')">Recent Movies</a>
+                    <a routerLink="recent" (click)="onSelect('recent')">Recent Movies</a>
                 </li>
                 <li>
-                    <a href="#" (click)="onSelect('trending')">Trending Movies</a>
+                    <a routerLink="trending" (click)="onSelect('trending')">Trending Movies</a>
                 </li><li>
-                  <a href="#" (click)="onSelect('popular')">Popular Movies</a>
+                  <a routerLink="popular" (click)="onSelect('popular')">Popular Movies</a>
               </li>
             </ul>
             
