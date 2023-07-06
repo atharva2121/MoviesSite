@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesDataService } from '../movies-data.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
 export class MovieDetailsComponent implements OnInit{
   movies = this.moviesDataService.getMoviesData();
   private paramMapSubscription: Subscription | undefined;
-  constructor(private moviesDataService: MoviesDataService, private route: ActivatedRoute){}
+  constructor(private moviesDataService: MoviesDataService, private route: ActivatedRoute, private router: Router){}
   movie: any;
 
   ngOnInit(): void {
@@ -41,5 +41,9 @@ export class MovieDetailsComponent implements OnInit{
     } 
     
    
+  }
+
+  navigateToHome(){
+    this.router.navigate(['/'])
   }
 }
