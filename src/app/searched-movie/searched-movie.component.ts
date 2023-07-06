@@ -25,6 +25,7 @@ export class SearchedMovieComponent {
       const searchedItem = params.get('name');
       console.log(searchedItem);
       if(searchedItem !== null){
+        this.moviesToBeDisplayed = [];
         for(let i= 0; i< this.moviesData.length; i++){
           if(this.moviesData[i].name.toLowerCase().includes(searchedItem.toLowerCase())){
             this.moviesToBeDisplayed.push(this.moviesData[i]);
