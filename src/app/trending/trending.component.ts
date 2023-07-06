@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesDataService } from '../movies-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-trending',
@@ -9,6 +10,9 @@ import { MoviesDataService } from '../movies-data.service';
 export class TrendingComponent {
   moviesData = this.moviesDataService.getMoviesData();
   trendingMoviesData = this.moviesDataService.getTrendingMoviesData();
-  constructor(private moviesDataService: MoviesDataService){
+  constructor(private moviesDataService: MoviesDataService, private router:Router){
+  }
+  navigateToMovieDetails(movieId: number){
+    this.router.navigate(['/movie-details', movieId]);
   }
 }

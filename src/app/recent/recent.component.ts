@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesDataService } from '../movies-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recent',
@@ -9,7 +10,10 @@ import { MoviesDataService } from '../movies-data.service';
 export class RecentComponent {
   moviesData = this.moviesDataService.getMoviesData();
   recentMoviesdata = this.moviesDataService.getRecentMoviesData();
-  constructor(private moviesDataService: MoviesDataService){
+  constructor(private moviesDataService: MoviesDataService, private router: Router){
     
+  }
+  navigateToMovieDetails(movieId: number){
+    this.router.navigate(['/movie-details', movieId]);
   }
 }

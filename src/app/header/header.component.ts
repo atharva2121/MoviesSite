@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,9 +13,11 @@ export class HeaderComponent {
   onSelect(typeOfMovie: string){
 
   }
+  constructor(private router: Router){}
   
 
   search(): void {
     console.log('Searching for:', this.searchTerm);
+    this.router.navigate(['/searched-item', this.searchTerm]);
   }
 }

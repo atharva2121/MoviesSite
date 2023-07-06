@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesDataService } from '../movies-data.service';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,13 @@ import { MoviesDataService } from '../movies-data.service';
 })
 export class HomeComponent {
   moviesData = this.moviesDataService.getMoviesData();
-  constructor(private moviesDataService: MoviesDataService){
+  constructor(private moviesDataService: MoviesDataService, private router:Router){
 
   }
+  navigateToMovieDetails(movieId: number){
+    this.router.navigate(['/movie-details', movieId]);
+  }
+
+  
+  
 }

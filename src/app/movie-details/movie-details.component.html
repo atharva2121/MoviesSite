@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <div class="row">
+      
+      <div class="col-md-12">
+        <div class="movie-container">
+            <img src="{{ movie.poster }}" class="movie-poster" alt="Movie Poster">
+            <div class="movie-details">
+                <h5>{{ movie.name }}</h5>
+                <p><strong>Release Date:</strong> {{ movie.releaseDate }}</p>
+                <p><strong>Cast:</strong> {{ movie.cast.join(', ') }}</p>
+                <p><strong>Description:</strong> {{ movie.description }}</p>
+                <p><strong>Type:</strong> {{ movie.type }}</p>
+                <p><strong>Genre:</strong> {{ movie.genre }}</p>
+                <p><strong>Duration:</strong> {{ movie.duration }}</p>
+                <p><strong>Rating:</strong> {{ movie.rating }}</p>
+                <hr>
+            </div>
+        </div>
+       
+        
+      </div>
+      
+    </div>
+  </div>

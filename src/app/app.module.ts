@@ -9,7 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { TrendingComponent } from './trending/trending.component';
 import { RecentComponent } from './recent/recent.component';
 import { PopularComponent } from './popular/popular.component';
-
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { SearchedMovieComponent } from './searched-movie/searched-movie.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,10 @@ import { PopularComponent } from './popular/popular.component';
     HomeComponent,
     TrendingComponent,
     RecentComponent,
-    PopularComponent
+    PopularComponent,
+    MovieDetailsComponent,
+    SearchedMovieComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
