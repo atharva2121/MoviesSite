@@ -306,6 +306,7 @@ export class MoviesDataService {
   }
 
   getRecentMoviesData(){
+    this.recentMoviesData = [];
     for (let i = 0; i < this.movies.length; i++) {
       const movie = this.movies[i];
       if(movie.type === "Recent"){
@@ -316,6 +317,7 @@ export class MoviesDataService {
   }
 
   getPopularMoviesData(){
+    this.popularMoviesData = [];
     for (let i = 0; i < this.movies.length; i++) {
       const movie = this.movies[i];
       if(movie.type === "Popular"){
@@ -326,6 +328,7 @@ export class MoviesDataService {
   }
 
   getTrendingMoviesData(){
+    this.trendingMoviesData = [];
     for (let i = 0; i < this.movies.length; i++) {
       const movie = this.movies[i];
       if(movie.type === "Trending"){

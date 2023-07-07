@@ -10,9 +10,7 @@ export class HeaderComponent {
 
   collapsed = true;
   searchTerm ?: string;
-  onSelect(typeOfMovie: string){
-
-  }
+  
   constructor(private router: Router){}
   
 
