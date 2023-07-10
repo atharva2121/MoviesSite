@@ -9,11 +9,26 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 })
 export class HomeComponent {
   moviesData = this.moviesDataService.getMoviesData();
+  currentPage = 1;
+  totalPages = Math.ceil(this.moviesData.length / 5);
   constructor(private moviesDataService: MoviesDataService, private router:Router){
 
   }
   navigateToMovieDetails(movieId: number){
     this.router.navigate(['/movie-details', movieId]);
+  }
+
+  nextPage() {
+   if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
+  }
+
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+      
+    }
   }
 
   

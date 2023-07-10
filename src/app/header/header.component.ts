@@ -17,5 +17,6 @@ export class HeaderComponent {
   search(): void {
     console.log('Searching for:', this.searchTerm);
     this.router.navigate(['/searched-item', this.searchTerm]);
+    this.searchTerm ="";
   }
 }
