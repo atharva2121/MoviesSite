@@ -27,3 +27,7 @@ body {
 .btn-outline-success {
     color: black;
 }
+
+.mr-5{
+  margin-right: 5px;
+}
