@@ -1,5 +1,13 @@
-
-<div class="container mt-4" style="margin-top: 120px;">
+<div class="container text-right pull-right">
+    <p style="margin-right: 75px; font-size: medium;">Sort the movies by </p>
+    <button class="btn btn-primary" (click)="onFilterChange('date')"> Date </button>
+    <button class="btn btn-primary" (click)="onFilterChange('duration')"> Duration </button>
+    <button class="btn btn-primary" (click)="onFilterChange('rating')"> Rating </button>
+    <button class="btn btn-primary" (click)="onFilterChange('none')">None</button>
+    
+</div>
+<div class="container mt-4" style="margin-top: 150px;">
+    
         <div class="row">
             <div class="col-md-3" *ngFor="let movie of moviesData.slice((currentPage - 1) * 5, currentPage * 5)">
                 <div class="card" (click) = "navigateToMovieDetails(movie.id)">
@@ -20,4 +28,23 @@
             <button class="btn btn-primary mr-5" (click)="previousPage()" [disabled]="currentPage === 1">Back</button>
             <button class="btn btn-primary" (click)="nextPage()" [disabled]="currentPage >= totalPages">Next</button>
         </div>
+</div>
+
+    <!-- <div class="container text-left">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Sort by
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" (click)="onFilterChange('date')">Date</a></li>
+                <li><a href="#" (click)="onFilterChange('duration')">Duration</a></li>
+                <li><a href="#" (click)="onFilterChange('rating')">Rating</a></li>
+                <li><a href="#" (click)="onFilterChange('none')">None</a></li>
+    
+            </ul>
+        </div>
+    
     </div>
+    
+    -->
