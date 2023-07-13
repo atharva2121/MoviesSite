@@ -294,9 +294,7 @@ export class MoviesDataService {
       "poster": "https://img.freepik.com/premium-psd/double-exposure-photo-effect-template_492987-352.jpg"
     }
   ]
-  recentMoviesData: any = [];
-  popularMoviesData: any = [];
-  trendingMoviesData: any = [];
+  typeBasedMovies ?: Array<any>;
   
 
   constructor() { }
@@ -305,36 +303,27 @@ export class MoviesDataService {
     return this.movies.slice();
   }
 
-  getRecentMoviesData(){
-    this.recentMoviesData = [];
+  getTypeBasedData(type: string|null){
+    this.typeBasedMovies = [];
     for (let i = 0; i < this.movies.length; i++) {
       const movie = this.movies[i];
-      if(movie.type === "Recent"){
-        this.recentMoviesData.push(movie);
+      if(type === 'recent'){
+        if(movie.type === "Recent"){
+          this.typeBasedMovies.push(movie);
+        }
+      } else if(type === 'popular'){
+          if(movie.type === "Popular"){
+          this.typeBasedMovies.push(movie);
+        }
+      } else{
+        if(movie.type === "Trending"){
+          this.typeBasedMovies.push(movie);
+        }
       }
+      
     }
-    return this.recentMoviesData.slice();
+    return this.typeBasedMovies.slice();
   }
 
-  getPopularMoviesData(){
-    this.popularMoviesData = [];
-    for (let i = 0; i < this.movies.length; i++) {
-      const movie = this.movies[i];
-      if(movie.type === "Popular"){
-        this.popularMoviesData.push(movie);
-      }
-    }
-    return this.popularMoviesData.slice();
-  }
-
-  getTrendingMoviesData(){
-    this.trendingMoviesData = [];
-    for (let i = 0; i < this.movies.length; i++) {
-      const movie = this.movies[i];
-      if(movie.type === "Trending"){
-        this.trendingMoviesData.push(movie);
-      }
-    }
-    return this.trendingMoviesData.slice();
-  }
+  
 }

@@ -6,28 +6,27 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { TrendingComponent } from './trending/trending.component';
-import { RecentComponent } from './recent/recent.component';
-import { PopularComponent } from './popular/popular.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { SearchedMovieComponent } from './searched-movie/searched-movie.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonComponent } from './common/common.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    TrendingComponent,
-    RecentComponent,
-    PopularComponent,
     MovieDetailsComponent,
     SearchedMovieComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CommonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PopularComponent } from './popular/popular.component';
-import { RecentComponent } from './recent/recent.component';
-import { TrendingComponent } from './trending/trending.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { SearchedMovieComponent } from './searched-movie/searched-movie.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CommonComponent } from './common/common.component';
 
 const routes: Routes = [
   {
@@ -14,16 +12,16 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "popular",
-    component: PopularComponent
+    path: ":type",
+    component: CommonComponent
   },
   {
-    path: "recent",
-    component: RecentComponent
+    path: ":type",
+    component: CommonComponent
   },
   {
-    path: "trending",
-    component: TrendingComponent
+    path: ":type",
+    component: CommonComponent
   },
   {
     path: 'movie-details/:id',

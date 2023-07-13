@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PopularComponent } from './popular.component';
+import { CommonComponent } from './common.component';
 
-describe('PopularComponent', () => {
-  let component: PopularComponent;
-  let fixture: ComponentFixture<PopularComponent>;
+describe('CommonComponent', () => {
+  let component: CommonComponent;
+  let fixture: ComponentFixture<CommonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PopularComponent ]
+      declarations: [ CommonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PopularComponent);
+    fixture = TestBed.createComponent(CommonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
