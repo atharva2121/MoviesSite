@@ -13,6 +13,7 @@ export class CommonComponent implements OnInit{
   paramMapSubscription ?: Subscription | undefined
   currentPage = 1;
   totalPages = 1;
+  // moviesGotFromApi ?: any = [];
   constructor(private moviesDataService: MoviesDataService, private router: Router, private route: ActivatedRoute){
     
   }
@@ -23,6 +24,9 @@ export class CommonComponent implements OnInit{
       console.log(type);
       this.addMovies(type);
     })
+
+    // this.moviesGotFromApi = this.moviesDataService.makeRequest();
+    // console.log(this.moviesGotFromApi);
   }
 
 

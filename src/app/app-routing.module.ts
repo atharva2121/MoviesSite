@@ -5,6 +5,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { SearchedMovieComponent } from './searched-movie/searched-movie.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CommonComponent } from './common/common.component';
+import { ApiDataComponent } from './api-data/api-data.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: ":type",
     component: CommonComponent
+  },
+  {
+    path: "api/:key",
+    component: ApiDataComponent
   },
   {
     path: 'movie-details/:id',

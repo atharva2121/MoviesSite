@@ -1,4 +1,6 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -295,9 +297,9 @@ export class MoviesDataService {
     }
   ]
   typeBasedMovies ?: Array<any>;
-  
+  apiBasedMovies ?: Array<any>;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getMoviesData(){
     return this.movies.slice();
@@ -323,6 +325,18 @@ export class MoviesDataService {
       
     }
     return this.typeBasedMovies.slice();
+  }
+
+  makeRequest(key: string | null): Observable<any> {
+    const url = 'https://imdb8.p.rapidapi.com/auto-complete?q=' + key;
+    const options = {
+      headers: new HttpHeaders({
+        'X-RapidAPI-Key': 'aa69419006msh67827d0d1f73392p122db2jsn46beda0f4d84',
+        'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
+      })
+    };
+
+    return this.http.get(url, options);
   }
 
   

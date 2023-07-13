@@ -11,6 +11,7 @@ import { SearchedMovieComponent } from './searched-movie/searched-movie.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonComponent } from './common/common.component';
+import { ApiDataComponent } from './api-data/api-data.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommonComponent } from './common/common.component';
     MovieDetailsComponent,
     SearchedMovieComponent,
     PageNotFoundComponent,
-    CommonComponent
+    CommonComponent,
+    ApiDataComponent
   ],
   imports: [
     BrowserModule,

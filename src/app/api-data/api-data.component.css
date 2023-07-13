@@ -1,0 +1,23 @@
+.card {
+    margin-bottom: 50px;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    width: 200px; /* Set a fixed width for the movie card */
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-img-top {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    white-space: nowrap; /* Prevent the movie name from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+ 
